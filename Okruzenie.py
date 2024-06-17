@@ -58,10 +58,8 @@ blurred.show()
 blurred.save("blurred.png")
 
 image_path = Image.open("blurred.png")
-# изменяем размер
 new_image = image_path.resize((1000, 600))
 new_image.show()
-# сохранение картинки
 new_image.save('Size.png')
 new_size = Image.open("Size.png")
-print(new_size.format, original.size, original.mode)
+print(new_size.format, new_size.size, new_size.mode)
